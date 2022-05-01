@@ -5,5 +5,13 @@
   "main": "index.js",
   "repository": "https://github.com/aditi0206/PIZZA-PARADISE.git",
   "author": "Aditi Mishra <aditi.mishra_cs19@gla.ac.in>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.7",
+    "express": "^4.18.1",
+    "express-ejs-layouts": "^2.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
 }
