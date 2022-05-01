@@ -1,0 +1,9 @@
+{
+  "name": "PIZZA-PARADISE",
+  "version": "1.0.0",
+  "description": "THIS IS OUR PIZZA PARADISE",
+  "main": "index.js",
+  "repository": "https://github.com/aditi0206/PIZZA-PARADISE.git",
+  "author": "Aditi Mishra <aditi.mishra_cs19@gla.ac.in>",
+  "license": "MIT"
+}
