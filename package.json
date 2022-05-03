@@ -8,8 +8,8 @@
     "scripts": {
         "dev": "nodemon server.js",
         "serve": "node server.js",
-        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "watch": "npm run development -- --watch",
+        "development": "mix",
+        "watch": "mix watch",
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
     },
     "license": "MIT",
@@ -21,6 +21,9 @@
     },
     "devDependencies": {
         "laravel-mix": "^6.0.43",
-        "nodemon": "^2.0.16"
+        "nodemon": "^2.0.16",
+        "resolve-url-loader": "5.0.0",
+        "sass": "^1.51.0",
+        "sass-loader": "12.1.0"
     }
 }
