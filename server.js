@@ -4,6 +4,16 @@ const ejs = require('ejs')
 const path = require('path')
 const expressLayout = require('express-ejs-layouts')
 const PORT = process.env.PORT || 3300
+const mongoose = require('mongoose')
+
+
+//database connection
+const url = 'mongodb://localhost/food';
+mongoose.connect(url).then(() => {
+    console.log('Database connected');
+}).catch((err) => console.log('Connection failed'));
+
+
 
 
 // assets
