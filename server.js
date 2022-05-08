@@ -14,8 +14,6 @@ mongoose.connect(url).then(() => {
 }).catch((err) => console.log('Connection failed'));
 
 
-
-
 // assets
 app.use(express.static('public'))
 

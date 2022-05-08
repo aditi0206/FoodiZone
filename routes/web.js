@@ -12,6 +12,9 @@ function initRoutes(app) {
 
     app.get('/register', authController().register)
 
+    app.get('/about', (req, res) => {
+        res.render('about')
+    })
 }
 
 module.exports = initRoutes
