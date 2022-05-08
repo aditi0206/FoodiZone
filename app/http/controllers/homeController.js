@@ -1,9 +1,12 @@
 //factory functions-object creation function- programming function
+const Menu = require('../../models/menu')
 
 function homeController() {
     return {
-        index(req, res) {
-            res.render('home')
+        async index(req, res) {
+            const foodi = await Menu.find()
+            return res.render('home', { foodi: foodi })
+
         }
     }
 }

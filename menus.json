@@ -1,0 +1,129 @@
+[{
+  "_id": {
+    "$oid": "6277835d1852fcdd546108ed"
+  },
+  "feature": "FULL KULCHA",
+  "image": "stuff kulcha.jpg",
+  "name": "STUFF KULCHA",
+  "price": "₹50"
+},{
+  "_id": {
+    "$oid": "627785cb1852fcdd546108ef"
+  },
+  "feature": "Plain Dosa and Masala Dosa",
+  "image": "dosa1.jpg",
+  "name": "\"DOSA",
+  "price": "₹70"
+},{
+  "_id": {
+    "$oid": "627786421852fcdd546108f0"
+  },
+  "feature": "PARATHA WITH RAITA",
+  "image": "lachha paratha.jpg",
+  "name": "LACHHA PARATHA",
+  "price": "₹100"
+},{
+  "_id": {
+    "$oid": "627786601852fcdd546108f1"
+  },
+  "feature": "Special Thali",
+  "image": "veg thali.jpg",
+  "name": "VEG DELUX THALI",
+  "price": "₹150"
+},{
+  "_id": {
+    "$oid": "627786631852fcdd546108f2"
+  },
+  "feature": "2 pav with bhaji",
+  "image": "\"pav bhaji.jpg",
+  "name": "PAV BHAJI",
+  "price": "₹80/plate"
+},{
+  "_id": {
+    "$oid": "627786671852fcdd546108f3"
+  },
+  "feature": "1/2 plate and full plate",
+  "image": "mushr.jpg",
+  "name": "KADHAI MUSHROOM",
+  "price": "₹130"
+},{
+  "_id": {
+    "$oid": "6277868a1852fcdd546108f5"
+  },
+  "feature": "Roll with chutney",
+  "image": "spring roll.jpg",
+  "name": "SPRING ROLL",
+  "price": "₹10/pcs"
+},{
+  "_id": {
+    "$oid": "6277868d1852fcdd546108f6"
+  },
+  "feature": "Small and Big Bowl",
+  "image": "soup.jpg",
+  "name": "HOT AND SOUR SOUP",
+  "price": "₹150"
+},{
+  "_id": {
+    "$oid": "627786911852fcdd546108f7"
+  },
+  "feature": "Full plate",
+  "image": "mutton korma.jpg",
+  "name": "MUTTON KORMA",
+  "price": "₹170"
+},{
+  "_id": {
+    "$oid": "627786951852fcdd546108f8"
+  },
+  "feature": "Full plate and Half plate",
+  "image": "chicken curry.jpg",
+  "name": "CHICKEN CURRY",
+  "price": "₹150"
+},{
+  "_id": {
+    "$oid": "627786991852fcdd546108f9"
+  },
+  "feature": "Full plate and Half plate",
+  "image": "chilli chicken.jpg",
+  "name": "CHILLI CHICKEN",
+  "price": "₹120"
+},{
+  "_id": {
+    "$oid": "6277869d1852fcdd546108fa"
+  },
+  "feature": "Full plate",
+  "image": "grilled chicken.jpg",
+  "name": "GRILLED CHICKEN",
+  "price": "₹190"
+},{
+  "_id": {
+    "$oid": "627786a11852fcdd546108fb"
+  },
+  "feature": "Full plate",
+  "image": "LOLLIPOP.jpg",
+  "name": "CHICKEN LOLLIPOP",
+  "price": "₹185"
+},{
+  "_id": {
+    "$oid": "627786a51852fcdd546108fc"
+  },
+  "feature": "Full and Half plate",
+  "image": "egg curry.jpg",
+  "name": "EGG CURRY",
+  "price": "₹150"
+},{
+  "_id": {
+    "$oid": "62778b0c1852fcdd546108fd"
+  },
+  "feature": "Full and Half plate",
+  "image": "biryani.jpg",
+  "name": "CHICKEN BIRYANI",
+  "price": "₹140"
+},{
+  "_id": {
+    "$oid": "62778b101852fcdd546108fe"
+  },
+  "feature": "Special Thali Full",
+  "image": "thali.jpg",
+  "name": "SPECIAL NON VEG THALI",
+  "price": "₹500"
+}]
