@@ -6,8 +6,6 @@ function initRoutes(app) {
 
     app.get('/', homeController().index)
 
-    app.get('/cart', cartController().index)
-
     app.get('/login', authController().login)
 
     app.get('/register', authController().register)
@@ -15,7 +13,7 @@ function initRoutes(app) {
     app.get('/about', (req, res) => {
         res.render('about')
     })
-
+    app.get('/cart', cartController().index)
     app.post('/update-cart', cartController().update)
 }
 

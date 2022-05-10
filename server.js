@@ -36,6 +36,12 @@ app.use(flash())
 app.use(express.static('public'))
 app.use(express.json())
 
+//global middleware-normalfunction
+app.use((req, res, next) => {
+    res.locals.session = req.session
+    next() //request is passed for next instruction
+})
+
 //set template engine
 app.use(expressLayout)
 app.set('views', path.join(__dirname, '/resources/views'))
