@@ -10,7 +10,7 @@ function updateCart(food) {
     //library axios
 
     axios.post('/update-cart', food).then(res => {
-
+        // console.log(res)
         cartCounter.innerText = res.data.totalQty
         new Noty({
             type: 'success',

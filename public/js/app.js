@@ -2486,6 +2486,7 @@ function updateCart(food) {
   //req to sent on server
   //library axios
   axios__WEBPACK_IMPORTED_MODULE_0___default().post('/update-cart', food).then(function (res) {
+    // console.log(res)
     cartCounter.innerText = res.data.totalQty;
     new (noty__WEBPACK_IMPORTED_MODULE_1___default())({
       type: 'success',
