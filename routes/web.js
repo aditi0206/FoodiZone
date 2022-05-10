@@ -15,6 +15,8 @@ function initRoutes(app) {
     app.get('/about', (req, res) => {
         res.render('about')
     })
+
+    app.post('/update-cart', cartController().update)
 }
 
 module.exports = initRoutes
