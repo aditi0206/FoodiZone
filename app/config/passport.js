@@ -22,7 +22,6 @@ function init(passport) {
         })
 
     }))
-
     passport.serializeUser((user, done) => {
         done(null, user._id) //userid is stored which confirms user is logged in or not
     })
@@ -32,5 +31,7 @@ function init(passport) {
             done(err, user)
         })
     })
+
+
 }
 module.exports = init

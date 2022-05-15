@@ -12,21 +12,16 @@ const MongoDbStore = require('connect-mongo')
 const passport = require('passport')
 
 //database connection
-const url = 'mongodb://localhost/food';
+// const url = 'mongodb://localhost/food';
 mongoose.connect(process.env.MONGO_CONNECTION_URL).then(() => {
     console.log('Database connected');
 }).catch((err) => console.log('Connection failed'));
 
 
-//passport 
-const passportInit = require('./app/config/passport')
-passportInit(passport)
-app.use(passport.initialize())
-
-app.use(passport.session())
+// passport config
 
 
-///session config
+
 app.use(session({
     secret: process.env.COOKIE_SECRET,
     resave: false,
@@ -35,13 +30,18 @@ app.use(session({
         collection: 'sessions'
     }),
     saveUninitialized: false,
-    // cookie: { maxAge: 1000 * 60 * 60 * 24 } //24 hours
+    cookie: { maxAge: 1000 * 60 * 60 * 24 } //24 hours
 
 }))
+const passportInit = require('./app/config/passport')
+passportInit(passport)
+app.use(passport.initialize())
+app.use(passport.session())
+
+//session config
 
 app.use(flash())
-
-// assets
+    // assets
 app.use(express.static('public'))
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
@@ -49,6 +49,7 @@ app.use(express.json())
 //global middleware-normalfunction
 app.use((req, res, next) => {
     res.locals.session = req.session
+    res.locals.user = req.user //logged in user set
     next() //request is passed for next instruction
 })
 

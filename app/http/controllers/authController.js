@@ -18,7 +18,7 @@ function authController() {
                     req.flash('error', info.message)
                     return res.redirect('/login')
                 }
-                req.logIn(user, (err) => {
+                req.login(user, (err) => {
                     if (err) {
                         req.flash('error', info.message)
                         return next(err)
@@ -70,6 +70,10 @@ function authController() {
 
             })
 
+        },
+        logout(req, res) {
+            req.logout()
+            return res.redirect('/')
         }
     }
 }
