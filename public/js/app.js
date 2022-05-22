@@ -2509,7 +2509,15 @@ addToCart.forEach(function (btn) {
     var food = JSON.parse(btn.dataset.food);
     updateCart(food); //server req and add to cart
   });
-});
+}); //remove alert message
+
+var alertMsg = document.querySelector('#success-alert');
+
+if (alertMsg) {
+  setTimeout(function () {
+    alertMsg.remove();
+  }, 2000);
+}
 
 /***/ }),
 
