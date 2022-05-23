@@ -12,23 +12,25 @@ export function initAdmin() {
             "X-Requested-With": "XMLHttpRequest"
         }
     }).then(res => {
-            orders = res.data
-            markup = generateMarkup(orders)
-            orderTableBody.innerHTML = markup
-        }).catch(err=>{
-            console.log(err)
-        })
-function renderItems(items){
-    let parsedItems=Object.values(items)
-    console.log('PARS:',parsedItems)
-    return parsedItems.map((menuItem)=>{
-        return `
+        orders = res.data
+        markup = generateMarkup(orders)
+        orderTableBody.innerHTML = markup
+    }).catch(err => {
+        console.log(err)
+    })
+
+    function renderItems(items) {
+        let parsedItems = Object.values(items)
+        console.log('PARS:', parsedItems)
+        return parsedItems.map((menuItem) => {
+            return `
             <p>${menuItem.item.name} - ${menuItem.qty} pcs </p>
         `
-    }).join('')
-}
+        }).join('')
+    }
+
     function generateMarkup(orders) {
-        return orders.map(order => { 
+        return orders.map(order => {
             return `
             <tr>
                <td class="border px-4 py-2 text-green-900">
@@ -50,7 +52,7 @@ function renderItems(items){
                                      ${order.status==='order_placed'?'selected':''}>Placed</option>
                        
                                     <option value="confirmed" 
-                                    ${order.status==='confirmed'?'confirmed':''}>Confirmed</option>
+                                    ${order.status==='confirmed'?'selected':''}>Confirmed</option>
                         
                                     <option value="shipped" 
                                     ${order.status==='shipped'?'selected':''}>Shipped</option>
@@ -80,7 +82,7 @@ function renderItems(items){
             
         </tr>
          
-    `       
-    }).join('')
+    `
+        }).join('')
     }
 }
