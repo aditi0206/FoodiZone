@@ -62,6 +62,17 @@ app.set('view engine', 'ejs')
 require('./routes/web.js')(app)
 
 
-app.listen(PORT, () => {
-    console.log(`Listening on port ${PORT}`)
+const server = app.listen(PORT, () => {
+        console.log(`Listening on port ${PORT}`)
+    })
+    //socket
+const connection = mongoose.connection
+const io = require('socket.io')(server)
+io.on('connection', (socket) => {
+    // Join
+    console.log(socket.id)
+    socket.on('join', (orderId) => {
+        console.log(orderId)
+        socket.join(orderId)
+    })
 })

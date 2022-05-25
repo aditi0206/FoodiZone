@@ -1,10 +1,10 @@
 <section class="orders light-section">
-    <div class="container mx-auto pt-12">
+    <div class="container pt-12 mx-auto">
 
-        <h1 class="font-bold text-lg mb-4">All orders</h1>
+        <h1 class="mb-4 text-lg font-bold">All orders</h1>
         <% if(messages.success) {%>
-            <div id="success-alert" class="flex items-center bg-green-500 text-white text-sm font-bold px-4 py-3" role="alert">
-                <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20">
+            <div id="success-alert" class="flex items-center px-4 py-3 text-sm font-bold text-white bg-green-500" role="alert">
+                <svg class="w-4 h-4 mr-2 fill-current" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20">
                 <path d="M12.432 0c1.34 0 2.01.912 2.01 1.957 0 1.305-1.164 2.512-2.679 2.512-1.269 
                 0-2.009-.75-1.974-1.99C9.789 1.436 10.67 0 12.432 0zM8.309 20c-1.058 
                 0-1.833-.652-1.093-3.524l1.214-5.092c.211-.814.246-1.141 0-1.141-.317 0-1.689.562-2.502 
@@ -17,7 +17,7 @@
                 </p>
             </div>
             <%}%>
-                <table class="w-full table-auto bg-white">
+                <table class="w-full bg-white table-auto">
                     <thead>
                         <tr>
                             <th class="px-4 py-2 text-left">Orders</th>
@@ -30,18 +30,18 @@
                         <% if(orders.length) {%>
                             <% orders.forEach((order)=>{%>
                                 <tr>
-                                    <td class="border px-4 py-2">
-                                        <a class="link" href="/">
+                                    <td class="px-4 py-2 border">
+                                        <a class="link" href="/customer/orders/<%= order._id %>">
                                             <%=order._id%>
                                         </a>
                                     </td>
-                                    <td class="border px-4 py-2">
+                                    <td class="px-4 py-2 border">
                                         <%=order.phone%>
                                     </td>
-                                    <td class="border px-4 py-2">
+                                    <td class="px-4 py-2 border">
                                         <%=order.address%>
                                     </td>
-                                    <td class="border px-4 py-2">
+                                    <td class="px-4 py-2 border">
                                         <%=moment(order.createdAt).format('hh:mm A')%>
                                     </td>
                                 </tr>
@@ -56,7 +56,4 @@
                     </tbody>
                 </table>
     </div>
-
-
-
 </section>

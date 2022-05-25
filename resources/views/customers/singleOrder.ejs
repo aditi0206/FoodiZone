@@ -1,2 +1,21 @@
-Single Order
-<%%>
+<section class="status">
+    <div class="container mx-auto">
+        <div class="w-2/3 mx-auto status-box">
+            <div class="flex items-center justify-between mb-12">
+                <h1 class="text-lg font-bold">Track Delivery Status</h1>
+                <h6 class="px-4 py-1 text-sm text-green-600 bg-white rounded-full">
+                    <%=order._id%>
+                </h6>
+                <input id="hiddenInput" type="hidden" value="<%=JSON.stringify(order)%>">
+
+            </div>
+            <ul>
+                <li class="pb-20 text-lg status_line" data-status="order_placed"><span>Order Placed</span></li>
+                <li class="pb-20 text-lg status_line" data-status="confirmed"><span>Confirmed</span></li>
+                <li class="pb-20 text-lg status_line" data-status="shipped"><span>Shipped</span></li>
+                <li class="pb-20 text-lg status_line" data-status="outfordelivery"><span>Out For Delivery</span></li>
+                <li class="text-lg status_line" data-status="delivered"><span>Delivered</span></li>
+            </ul>
+        </div>
+    </div>
+</section>

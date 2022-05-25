@@ -34,12 +34,12 @@ function orderController() {
 
         },
         async show(req, res) {
-            const order = await Order.findById(req.param._id)
+            const order = await Order.findById(req.params.id)
 
             //authorize user
             if (req.user._id.toString() === order.customerId.toString()) {
-                return res.render('customer/singleOrder', {
-                    order: order
+                return res.render('customers/singleOrder', {
+                    order
                 })
             }
             return res.redirect('/')

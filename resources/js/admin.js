@@ -57,10 +57,10 @@ export function initAdmin() {
                                     <option value="shipped" 
                                     ${order.status==='shipped'?'selected':''}>Shipped</option>
                        
-                                    <option value="out_for_delivery" 
+                                    <option value="outfordelivery" 
                                     ${order.status==='outfordelivery'?'selected':''}>Out For Delivery</option>
                        
-                                    <option value="Delivered" 
+                                    <option value="delivered" 
                                     ${order.status==='delivered'?'selected':''}>Delivered</option>
                             </select>
                     </form>
