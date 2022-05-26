@@ -1,6 +1,6 @@
 //array type
 import axios from 'axios'
-import Noty from 'noty'
+
 import { initAdmin } from './admin'
 import moment from 'moment'
 let addToCart = document.querySelectorAll('.add-to-cart')
@@ -56,26 +56,26 @@ order = JSON.parse(order)
 let time = document.createElement('small')
 
 function updateStatus(order) {
+    statuses.forEach((status) => {
+        status.classList.remove('step-completed')
+        status.classList.remove('current')
+    })
     let stepCompleted = true;
     statuses.forEach((status) => {
         let dataProp = status.dataset.status
         if (stepCompleted) {
             status.classList.add('step-completed')
         }
-
         if (dataProp === order.status) {
             stepCompleted = false
             time.innerText = moment(order.updatedAt).format('hh:mm A')
-
             status.appendChild(time)
             if (status.nextElementSibling) {
                 status.nextElementSibling.classList.add('current')
             }
         }
     })
-
 }
-
 updateStatus(order);
 
 
@@ -87,3 +87,9 @@ if (order) {
 }
 
 // //order_32724784682479848974
+socket.on('orderUpdated', () => {
+    const updatedOrder = {...order }
+    updatedOrder.updatedAt = moment().format()
+    updatedOrder.status = data.status
+    console.log(data)
+})
