@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\Aditi\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add bcryp
+  C:\Program Files\nodejs\node.exe C:\Users\Aditi\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add Noty
 
 PATH: 
   C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\MinGW;C:\MinGW\bin;C:\Program Files\Java\jdk-15.0.2\bin;C:\Program Files\Git\cmd;F:\xampp1\php;C:\Program Files\nodejs\;C:\Program Files\MongoDB\Server\5.0\bin;C:\Program Files\MongoDB\Server\5.0\bin;C:\Users\Aditi\AppData\Roaming\npm;C:\Program Files\nodejs\node_modules\npm\bin;C:\Users\Aditi\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\Aditi\AppData\Local\Programs\Python\Python39\;C:\Users\Aditi\AppData\Local\Programs\Python\Python39-32\Scripts\;C:\Users\Aditi\AppData\Local\Programs\Python\Python39-32\;C:\Users\Aditi\AppData\Local\Microsoft\WindowsApps;C:\Users\Aditi\Desktop\Microsoft VS Code\bin;F:\xampp1\php;C:\Users\Aditi\AppData\Roaming\npm;C:\Users\Aditi\AppData\Local\GitHubDesktop\bin
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/bcryp: Not found
+  Error: https://registry.yarnpkg.com/Noty: Not found
       at Request.params.callback [as _callback] (C:\Users\Aditi\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66138:18)
       at Request.self.callback (C:\Users\Aditi\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140883:22)
       at Request.emit (node:events:520:28)
@@ -49,18 +49,19 @@ npm manifest:
           "connect-ensure-login": "^0.1.1",
           "connect-mongo": "^4.6.0",
           "cross-env": "^7.0.3",
-          "dotenv": "^16.0.0",
+          "dotenv": "^16.0.1",
           "ejs": "^3.1.7",
           "express": "^4.18.1",
           "express-ejs-layouts": "^2.5.1",
           "express-flash": "^0.0.2",
-          "express-session": "^1.17.2",
+          "express-session": "^1.17.3",
+          "flash": "^1.1.0",
           "moment": "^2.29.3",
-          "mongoose": "^6.3.3",
+          "mongoose": "^6.3.4",
           "noty": "^3.2.0-beta-deprecated",
-          "passport": "^0.5.2",
+          "passport": "^0.6.0",
           "passport-local": "^1.0.0",
-          "passport-local-mongoose": "^7.0.0",
+          "passport-local-mongoose": "^7.1.2",
           "socket.io": "^4.5.1"
       },
       "devDependencies": {
@@ -1732,7 +1733,7 @@ Lockfile:
   
   axios@^0.27.2:
     version "0.27.2"
-    resolved "https://registry.npmjs.org/axios/-/axios-0.27.2.tgz"
+    resolved "https://registry.yarnpkg.com/axios/-/axios-0.27.2.tgz#207658cc8621606e586c85db4b41a750e756d972"
     integrity sha512-t+yRIyySRTp/wua5xEr+z1q60QmLq8ABsS5O9Me1AsE5dfKqgnCFzwiCZZ/cGNd1lq4/7akDWMxdhVlucjmnOQ==
     dependencies:
       follow-redirects "^1.14.9"
@@ -1801,7 +1802,7 @@ Lockfile:
   
   bcrypt@^5.0.1:
     version "5.0.1"
-    resolved "https://registry.npmjs.org/bcrypt/-/bcrypt-5.0.1.tgz"
+    resolved "https://registry.yarnpkg.com/bcrypt/-/bcrypt-5.0.1.tgz#f1a2c20f208e2ccdceea4433df0c8b2c54ecdf71"
     integrity sha512-9BTgmrhZM2t1bNuDtrtIMVSmmxZBrJ71n8Wg+YgdjHuIWYF7SjjmCPZFB+/5i/o/PIeRpwVJR3P+NrpIItUjqw==
     dependencies:
       "@mapbox/node-pre-gyp" "^1.0.0"
@@ -2386,20 +2387,15 @@ Lockfile:
     resolved "https://registry.npmjs.org/cookie-signature/-/cookie-signature-1.0.6.tgz"
     integrity sha1-4wOogrNCzD7oylE6eZmXNNqzriw=
   
-  cookie@0.4.1:
-    version "0.4.1"
-    resolved "https://registry.npmjs.org/cookie/-/cookie-0.4.1.tgz"
-    integrity sha512-ZwrFkGJxUR3EIoXtO+yVE69Eb7KlixbaeAWfBQB9vVsNn/o+Yw69gBWSSDK825hQNdN+wF8zELf3dFNl/kxkUA==
+  cookie@0.4.2, cookie@~0.4.1:
+    version "0.4.2"
+    resolved "https://registry.npmjs.org/cookie/-/cookie-0.4.2.tgz"
+    integrity sha512-aSWTXFzaKWkvHO1Ny/s+ePFpvKsPnjc551iI41v3ny/ow6tBG5Vd+FuqGNhh1LxOmVzOlGUriIlOaokOvhaStA==
   
   cookie@0.5.0:
     version "0.5.0"
     resolved "https://registry.npmjs.org/cookie/-/cookie-0.5.0.tgz"
     integrity sha512-YZ3GUyn/o8gfKJlnlX7g7xq4gyO6OSuhGPKaaGssGB2qgDUS0gPgtTvoyZLTt9Ab6dC4hfc9dV5arkvc/OCmrw==
-  
-  cookie@~0.4.1:
-    version "0.4.2"
-    resolved "https://registry.npmjs.org/cookie/-/cookie-0.4.2.tgz"
-    integrity sha512-aSWTXFzaKWkvHO1Ny/s+ePFpvKsPnjc551iI41v3ny/ow6tBG5Vd+FuqGNhh1LxOmVzOlGUriIlOaokOvhaStA==
   
   core-js-compat@^3.21.0, core-js-compat@^3.22.1:
     version "3.22.7"
@@ -2838,10 +2834,10 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-10.0.0.tgz#3d4227b8fb95f81096cdd2b66653fb2c7085ba81"
     integrity sha512-rlBi9d8jpv9Sf1klPjNfFAuWDjKLwTIJJ/VxtoTwIR6hnZxcEOQCZg2oIL3MWBYw5GpUDKOEnND7LXTbIpQ03Q==
   
-  dotenv@^16.0.0:
-    version "16.0.0"
-    resolved "https://registry.npmjs.org/dotenv/-/dotenv-16.0.0.tgz"
-    integrity sha512-qD9WU0MPM4SWLPJy/r2Be+2WgQj8plChsyrCNQzW/0WjvcJQiKQJ9mH3ZgB3fxbUUxgc/11ZJ0Fi5KiimWGz2Q==
+  dotenv@^16.0.1:
+    version "16.0.1"
+    resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.0.1.tgz#8f8f9d94876c35dac989876a5d3a82a267fdce1d"
+    integrity sha512-1K6hR6wtk2FviQ4kEiSjFiH5rpzEVi8WW0x96aztHVMhEspNpc4DVOUTEHtEva5VThQ8IaBX1Pe4gSzpVVUsKQ==
   
   duplexer3@^0.1.4:
     version "0.1.4"
@@ -3051,12 +3047,12 @@ Lockfile:
     dependencies:
       connect-flash "0.1.x"
   
-  express-session@^1.17.2:
-    version "1.17.2"
-    resolved "https://registry.npmjs.org/express-session/-/express-session-1.17.2.tgz"
-    integrity sha512-mPcYcLA0lvh7D4Oqr5aNJFMtBMKPLl++OKKxkHzZ0U0oDq1rpKBnkR5f5vCHR26VeArlTOEF9td4x5IjICksRQ==
+  express-session@^1.17.3:
+    version "1.17.3"
+    resolved "https://registry.yarnpkg.com/express-session/-/express-session-1.17.3.tgz#14b997a15ed43e5949cb1d073725675dd2777f36"
+    integrity sha512-4+otWXlShYlG1Ma+2Jnn+xgKUZTMJ5QD3YvfilX3AcocOAbIkVylSWEklzALe/+Pu4qV6TYBj5GwOBFfdKqLBw==
     dependencies:
-      cookie "0.4.1"
+      cookie "0.4.2"
       cookie-signature "1.0.6"
       debug "2.6.9"
       depd "~2.0.0"
@@ -3067,7 +3063,7 @@ Lockfile:
   
   express@^4.17.3, express@^4.18.1:
     version "4.18.1"
-    resolved "https://registry.npmjs.org/express/-/express-4.18.1.tgz"
+    resolved "https://registry.yarnpkg.com/express/-/express-4.18.1.tgz#7797de8b9c72c857b9cd0e14a5eea80666267caf"
     integrity sha512-zZBcOX9TfehHQhtupq57OF8lFZ3UZi08Y97dwFCkD8p9d/d2Y3M+ykKcwaMDEL+4qyUolgBDX6AblpR3fL212Q==
     dependencies:
       accepts "~1.3.8"
@@ -3198,6 +3194,11 @@ Lockfile:
     dependencies:
       locate-path "^5.0.0"
       path-exists "^4.0.0"
+  
+  flash@^1.1.0:
+    version "1.1.0"
+    resolved "https://registry.yarnpkg.com/flash/-/flash-1.1.0.tgz#8ab2b29ed3b68a5cfb1a89bf98e7f69d7f1a020a"
+    integrity sha512-2pvqSI88nkPRSyh8kOJV0TqxlfLjZKS9b2jDf67RWGeIyicEGJoDovSyVS9zdiWbx/M9jzZkmFB5TSdaeBNSZA==
   
   follow-redirects@^1.0.0:
     version "1.15.0"
@@ -4317,7 +4318,7 @@ Lockfile:
   
   moment@^2.29.3:
     version "2.29.3"
-    resolved "https://registry.npmjs.org/moment/-/moment-2.29.3.tgz"
+    resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.3.tgz#edd47411c322413999f7a5940d526de183c031f3"
     integrity sha512-c6YRvhEo//6T2Jz/vVtYzqBzwvPT95JBQ+smCytzf7c50oMZRsR/a4w88aD34I+/QVSfnoAnSBFPJHItlOMJVw==
   
   mongodb-connection-string-url@^2.5.2:
@@ -4340,9 +4341,9 @@ Lockfile:
     optionalDependencies:
       saslprep "^1.0.3"
   
-  mongoose@^6.3.3:
+  mongoose@^6.3.4:
     version "6.3.4"
-    resolved "https://registry.npmjs.org/mongoose/-/mongoose-6.3.4.tgz"
+    resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-6.3.4.tgz#622f41c7380fba637f87006ebc46223753b3aac7"
     integrity sha512-UP0azyGMdY+2YNbJUHeHhnVw5vPzCqs4GQDUwHkilif/rwmSZktUQhQWMp1pUgRNeF2JC30vWGLrInZxD7K/Qw==
     dependencies:
       bson "^4.6.2"
@@ -4526,7 +4527,7 @@ Lockfile:
   
   noty@^3.2.0-beta-deprecated:
     version "3.2.0-beta-deprecated"
-    resolved "https://registry.npmjs.org/noty/-/noty-3.2.0-beta-deprecated.tgz"
+    resolved "https://registry.yarnpkg.com/noty/-/noty-3.2.0-beta-deprecated.tgz#f74126808b40ba11d7cea3eefc836b32ff7a30f2"
     integrity sha512-ntRbHuQ9SnnnVFZm/oq5L1DBCaHQUvsU24AwZH3PGjAWx2YqR/IhOadMk11vmJovYiQo00oqTj6Hp+D6PGtmLA==
   
   npm-run-path@^4.0.1:
@@ -4729,9 +4730,9 @@ Lockfile:
       no-case "^3.0.4"
       tslib "^2.0.3"
   
-  passport-local-mongoose@^7.0.0:
+  passport-local-mongoose@^7.1.2:
     version "7.1.2"
-    resolved "https://registry.npmjs.org/passport-local-mongoose/-/passport-local-mongoose-7.1.2.tgz"
+    resolved "https://registry.yarnpkg.com/passport-local-mongoose/-/passport-local-mongoose-7.1.2.tgz#0a89876ef8a8e18787e59a39740e61c5653eb25e"
     integrity sha512-hNLIKi/6IhElr/PhOze8wLDh7T4+ZYhc8GFWYApLgG7FrjI55tuGZELPtsUBqODz77OwlUUf+ngPgHN09zxGLg==
     dependencies:
       generaterr "^1.5.0"
@@ -4740,7 +4741,7 @@ Lockfile:
   
   passport-local@^1.0.0:
     version "1.0.0"
-    resolved "https://registry.npmjs.org/passport-local/-/passport-local-1.0.0.tgz"
+    resolved "https://registry.yarnpkg.com/passport-local/-/passport-local-1.0.0.tgz#1fe63268c92e75606626437e3b906662c15ba6ee"
     integrity sha1-H+YyaMkudWBmJkN+O5BmYsFbpu4=
     dependencies:
       passport-strategy "1.x.x"
@@ -4750,13 +4751,14 @@ Lockfile:
     resolved "https://registry.npmjs.org/passport-strategy/-/passport-strategy-1.0.0.tgz"
     integrity sha1-tVOaqPwiWj0a0XlHbd8ja0QPUuQ=
   
-  passport@^0.5.2:
-    version "0.5.3"
-    resolved "https://registry.npmjs.org/passport/-/passport-0.5.3.tgz"
-    integrity sha512-gGc+70h4gGdBWNsR3FuV3byLDY6KBTJAIExGFXTpQaYfbbcHCBlRRKx7RBQSpqEqc5Hh2qVzRs7ssvSfOpkUEA==
+  passport@^0.6.0:
+    version "0.6.0"
+    resolved "https://registry.yarnpkg.com/passport/-/passport-0.6.0.tgz#e869579fab465b5c0b291e841e6cc95c005fac9d"
+    integrity sha512-0fe+p3ZnrWRW74fe8+SvCyf4a3Pb2/h7gFkQ8yTJpAO50gDzlfjZUZTO1k5Eg9kUct22OxHLqDZoKUWRHOh9ug==
     dependencies:
       passport-strategy "1.x.x"
       pause "0.0.1"
+      utils-merge "^1.0.1"
   
   path-browserify@0.0.1:
     version "0.0.1"
@@ -6217,7 +6219,7 @@ Lockfile:
     dependencies:
       inherits "2.0.3"
   
-  utils-merge@1.0.1:
+  utils-merge@1.0.1, utils-merge@^1.0.1:
     version "1.0.1"
     resolved "https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.1.tgz"
     integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=

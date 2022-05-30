@@ -5,7 +5,6 @@ const orderController = require('../app/http/controllers/customers/orderControll
 const adminOrderController = require('../app/http/controllers/admin/orderController')
 const statusController = require('../app/http/controllers/admin/statusController')
 
-
 //middlewares
 const guest = require('../app/http/middlewares/guest')
 const auth = require('../app/http/middlewares/auth')
